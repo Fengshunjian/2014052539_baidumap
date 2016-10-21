@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_enemy_detial_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.fsjtext2.enemy_detial_show"
+    android:background="@drawable/ene_detial_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:textColor="@android:color/holo_red_light"
+
+        android:layout_toLeftOf="@+id/enemy_detial_number"
+        android:id="@+id/enemy_detial_name" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enemy_detial_name"
+        android:layout_marginTop="46dp"
+        android:id="@+id/enemy_detial_number"
+        android:layout_alignRight="@+id/enemy_detial_jingweidu"
+        android:layout_alignEnd="@+id/enemy_detial_jingweidu"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView6"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/radar"
+        android:id="@+id/ene_radar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="180dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/friend"
+        android:id="@+id/ene_friend"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ene_radar"
+        android:layout_toEndOf="@+id/ene_radar"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/ene_radar" />
+
+    <ImageView
+        app:srcCompat="@drawable/delete"
+        android:id="@+id/ene_detial_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="35dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="38dp"
+        android:id="@+id/enemy_detial_jingweidu"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/enemy_detial_number"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/enemy_detial_jingweidu"
+        android:layout_alignLeft="@+id/enemy_detial_jingweidu"
+        android:layout_alignStart="@+id/enemy_detial_jingweidu" />
+
+</RelativeLayout>
